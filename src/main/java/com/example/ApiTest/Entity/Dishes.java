@@ -7,7 +7,13 @@ public class Dishes {
     private Double Price;
     private String Description;
 
-    public Dishes() {
+    public Dishes(Integer Id, String Name, Double Price, String Description) {
+       this.Id = Id;
+       this.Name = Name;
+       this.Price = Price;
+       this.Description = Description;
+
+
     }
 
     public Integer getId() {
