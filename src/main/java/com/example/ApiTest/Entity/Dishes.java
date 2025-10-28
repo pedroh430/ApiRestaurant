@@ -1,17 +1,26 @@
 package com.example.ApiTest.Entity;
 
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Dishes {
 
+    @Id
     private Integer Id;
+
     private String Name;
     private Double Price;
     private String Description;
 
+
     public Dishes(Integer Id, String Name, Double Price, String Description) {
-       this.Id = Id;
-       this.Name = Name;
-       this.Price = Price;
-       this.Description = Description;
+
+        this.Id = Id;
+        this.Name = Name;
+        this.Price = Price;
+        this.Description = Description;
 
 
     }
