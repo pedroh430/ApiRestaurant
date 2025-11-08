@@ -23,4 +23,11 @@ public class DishesService {
     public void insertDishes(Dishes dishes){
         dishesRepository.save(dishes);
     }
+
+    public Dishes getDishesById(Integer Id){
+        return dishesRepository.findById(Id).orElseThrow(()-> new  IllegalStateException(
+                Id +"not found"));
+
+
+    }
 }
