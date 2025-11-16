@@ -33,14 +33,8 @@ A documentação da API é feita com **Swagger/OpenAPI**.
 ### 🧩 Passos
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seuusuario/api-doces.git
 
-# Acesse o diretório
-cd api-doces
-
-# Execute o projeto
-mvn spring-boot:run
+```
 
 
 
