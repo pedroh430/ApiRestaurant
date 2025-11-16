@@ -27,7 +27,5 @@ public class DishesService {
     public Dishes getDishesById(Integer Id){
         return dishesRepository.findById(Id).orElseThrow(()-> new  IllegalStateException(
                 Id +"not found"));
-
-
     }
 }
