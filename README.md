@@ -30,9 +30,17 @@ A documentação da API é feita com **Swagger/OpenAPI**.
 - **Spring Data JPA**
 - **PostgresSQL driver**
 
-### 🧩 Passos
+###  Passos
 
+### Clone o repositorio
 ```bash
+git clone https://github.com/pedroh430/ApiRestaurant.git
+```
+
+### Configure o docker compose para depois fazer a criaçao do conteiner
+```dockerfile
+
+
 
 ```
 
