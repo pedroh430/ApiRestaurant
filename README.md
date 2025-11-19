@@ -29,6 +29,7 @@ A documentação da API é feita com **Swagger/OpenAPI**.
 - **Spring web**
 - **Spring Data JPA**
 - **PostgresSQL driver**
+---
 
 ###  Passos
 
@@ -36,12 +37,60 @@ A documentação da API é feita com **Swagger/OpenAPI**.
 ```bash
 git clone https://github.com/pedroh430/ApiRestaurant.git
 ```
-
+---
 ### Configure o docker compose para depois fazer a criaçao do conteiner
+```yaml
+services:
+
+  db:
+
+    container_name: postgres-spring-boot
+
+    image: postgres:latest
+
+    environment:
+
+      POSTGRES_USER: pedro
+
+      POSTGRES_PASSWORD: password
+
+      PGDATA: /data/postgres
+
+    volumes:
+
+      - db:/data/postgres
+
+    ports:
+
+      - "5332:5432"
+
+    networks:
+
+      - db
+
+    restart: unless-stopped
+
+
+
+networks:
+
+  db:
+
+    driver: bridge
+
+volumes:
+
+  db:
+```
+---
 ```dockerfile
-
-
-
+#rode no terminal apos docker comfigurado
+docker compose up -d
+```
+-------
+### Para visualizar a documentaçao da Api usei o Swegger basta acessar o site quando o projeto rodar.
+```
+http://localhost:8080/swagger-ui/index.html
 ```
 
 
