@@ -13,13 +13,17 @@ A documentação da API é feita com **Swagger/OpenAPI**.
 
 ##  Tecnologias
 
-- **Java 17**
-- **Spring Boot 3**
-- **Spring Web**
-- **Spring Data JPA**
-- **PostgreSQL**
-- **Swagger (Springdoc OpenAPI)**
-- **Docker**
+
+
+| Tecnologia | Uso |
+|---------|-----|
+| **Java 17** | Linguagem principal |
+| **Spring Boot** | Framework para criação da API |
+| **PostgreSQL** | Banco de dados |
+| **Docker & Docker Compose** | Containerização do banco |
+| **JPA** | Mapeamento ORM |
+| **Swagger (Springdoc OpenAPI)** | Documentação da API |
+| **Maven** | Gerenciamento de dependências |
 
 ---
 
@@ -29,6 +33,7 @@ A documentação da API é feita com **Swagger/OpenAPI**.
 - **Spring web**
 - **Spring Data JPA**
 - **PostgresSQL driver**
+- **Springdoc OpenAPI**
 ---
 
 ###  Passos
@@ -84,14 +89,42 @@ volumes:
 ```
 ---
 ```dockerfile
+Variáveis padrão (podem mudar)
+
+HOST: localhost
+
+PORT: 5432
+
+USER: postgres
+
+PASSWORD: postgres
+```
+---
+
+---
+
+```dockerfile
 #rode no terminal apos docker comfigurado
 docker compose up -d
 ```
+---
+### Acessando o banco pelo terminal
+```dockerfile
+docker exec -it postgres bash
+psql -U postgres -d meu_banco 
+```
+
 -------
 ### Para visualizar a documentaçao da Api usei o Swegger basta acessar o site quando o projeto rodar.
 ```
 http://localhost:8080/swagger-ui/index.html
 ```
+---
+## 👤 Autor
+
+### Pedro Ribeiro
+Desenvolvedor Backend | Java & Sistemas Distribuídos
+- 🔗 LinkedIn: https://www.linkedin.com/in/pedro-ribeiro-85aba2319/
 
 
 
