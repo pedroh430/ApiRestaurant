@@ -15,15 +15,24 @@ public class DishesService {
     public DishesService(DishesRepository dishesRepository) {
         this.dishesRepository = dishesRepository;
     }
-
+    //GET all dishes
     public List<Dishes> getALLDishes(){
         return dishesRepository.findAll();
     }
 
+    //POST dishes
     public void insertDishes(Dishes dishes){
         dishesRepository.save(dishes);
     }
 
+    public void  deleteDishes(Integer Id){
+        com.example.ApiTest.Entity.Dishes dishes = dishesRepository.findById(Id).orElseThrow(()-> new RuntimeException("not found"));
+        dishesRepository.delete(dishes);
+
+    }
+
+
+    //GET id dishes
     public Dishes getDishesById(Integer Id){
         return dishesRepository.findById(Id).orElseThrow(()-> new  IllegalStateException(
                 Id +"not found"));
