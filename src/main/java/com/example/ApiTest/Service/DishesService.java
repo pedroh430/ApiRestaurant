@@ -25,12 +25,11 @@ public class DishesService {
         dishesRepository.save(dishes);
     }
 
+    //DELETE dishes
     public void  deleteDishes(Integer Id){
         com.example.ApiTest.Entity.Dishes dishes = dishesRepository.findById(Id).orElseThrow(()-> new RuntimeException("not found"));
         dishesRepository.delete(dishes);
-
     }
-
 
     //GET id dishes
     public Dishes getDishesById(Integer Id){
