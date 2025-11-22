@@ -123,7 +123,7 @@ http://localhost:8080/swagger-ui/index.html
 ## 👤 Autor
 
 ### Pedro Ribeiro
-Desenvolvedor Backend | Java & Sistemas Distribuídos
+Desenvolvedor Backend
 - 🔗 LinkedIn: https://www.linkedin.com/in/pedro-ribeiro-85aba2319/
 
 
