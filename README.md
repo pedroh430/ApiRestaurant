@@ -15,15 +15,15 @@ A documentação da API é feita com **Swagger/OpenAPI**.
 
 
 
-| Tecnologia | Uso |
-|---------|-----|
-| **Java 17** | Linguagem principal |
-| **Spring Boot** | Framework para criação da API |
-| **PostgreSQL** | Banco de dados |
-| **Docker & Docker Compose** | Containerização do banco |
-| **JPA** | Mapeamento ORM |
+| Tecnologia                      | Uso |
+|---------------------------------|-----|
+| **Java 25**                     | Linguagem principal |
+| **Spring Boot**                 | Framework para criação da API |
+| **PostgreSQL**                  | Banco de dados |
+| **Docker & Docker Compose**     | Containerização do banco |
+| **JPA**                         | Mapeamento ORM |
 | **Swagger (Springdoc OpenAPI)** | Documentação da API |
-| **Maven** | Gerenciamento de dependências |
+| **Maven**                       | Gerenciamento de dependências |
 
 ---
 
